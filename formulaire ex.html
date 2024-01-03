@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>FORMULAIRE</title>
+    <style>
+        label {display: inline-block;min-width: 200px;}
+    </style>
+</head>
+<body>
+    <form >
+    <fieldset>
+        <legend><b>Vos cordonnées</b></legend>
+        
+        <label for="nom">nom: </label>
+        <input type="text"  id="nom" placeholder="votre nom" required><br>
+            
+        <label for="prenom">prenom: </label>
+        <input type="text" n id="prenom" placeholder="votre prenom" required><br>
+            
+        <label for="date">date: </label>
+        <input type="date"  id="date"  required><br>
+            
+        <label for="mail">Mail: </label>
+        <input type="email" placeholder="mail" id="mail"  required><br>
+
+        <label for="site">site: </label>
+        <input type="url"  id="site"  required><br>
+
+        <label for="code">code: </label>
+        <input type="text" placeholder="code" id="code"  required><br>
+
+
+        <label for="genre">Genre:</label>
+        <div style="display: inline-block; vertical-align: middle">
+            <div style="display: block;">
+                <input type="radio" id="homme" name="genre">
+                <label for="homme">Homme</label>
+            </div>
+            <div style="display: block;">
+                <input type="radio" id="femme" name="genre">
+                <label for="femme">Femme</label>
+            </div>
+        </div>
+            <br>
+        <label for="pays">Pays:</label>
+        <select id="pays" name="pays:" >
+            <option value="" disabled selected>votre pays</option>
+        </select>
+    </fieldset>
+
+        <fieldset>
+            <legend><b>Vos goûts</b></legend>
+            <input type="checkbox" id="t1">
+            <label for="t1">Tarte aus fraises à la crème d'amandes</label>
+            <br>
+            <input type="checkbox" id="t2">
+            <label for="t2">Tarte aux prunes</label>
+            <br>
+            <input type="checkbox" id="t3">
+            <label for="t3">Tarte rustique aux mirabelles de Lorraine, noisettes et miel</label>
+            <br>
+            <textarea rows=4 cols=50 placeholder="Décrivez vos goûts en détail "></textarea>
+        </fieldset>
+        <fieldset>
+            <legend><b>Envoyez nous votre photo</b></legend>
+            <input type="file">
+            <br><br>
+            <input type="reset" value="Effacer">
+            &emsp;
+            <input type="submit" value="Envoyer">
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
